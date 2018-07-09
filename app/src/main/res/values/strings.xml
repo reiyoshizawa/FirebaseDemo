@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FirebaseDemo</string>
+    <string name="artist">Artist</string>
+    <string name="add_artist">Add Artist</string>
+    <string name="name">Name</string>
+    <string-array name="genres">
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Hip-Hop</item>
+        <item>Classics</item>
+        <item>Samba</item>
+        <item>Reggae</item>
+        <item>K-Pop</item>
+        <item>EDM</item>
+    </string-array>
+</resources>
