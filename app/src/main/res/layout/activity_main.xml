@@ -7,57 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <EditText
-        android:id="@+id/artist"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:id="@+id/artistET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/artist"
         android:inputType="textPersonName"
-        android:text="@string/name"
-        app:layout_constraintBottom_toTopOf="@+id/genre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Spinner
-        android:id="@+id/genre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/genres"
+        android:layout_width="368dp"
+        android:layout_height="34dp"
         android:entries="@array/genres"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/artist"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/artistET"/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:onClick="addArtist"
         android:text="@string/add_artist"
-        app:layout_constraintBottom_toTopOf="@+id/artistListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genre"
-        tools:ignore="MissingConstraints,OnClick" />
+        app:layout_constraintTop_toBottomOf="@+id/genres"/>
 
     <ListView
         android:id="@+id/artistListView"
-        android:layout_width="match_parent"
-        android:layout_height="272dp"
-        android:layout_marginBottom="103dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintTop_toBottomOf="@+id/addButton"/>
 </android.support.constraint.ConstraintLayout>
